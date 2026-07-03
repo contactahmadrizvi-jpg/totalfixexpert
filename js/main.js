@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   initNavigation();
   initBeforeAfterSlider();
+  initGalleryCarousel();
   initGalleryLightbox();
   initForms();
   initDynamicComponents();
@@ -94,6 +95,103 @@ function initBeforeAfterSlider() {
   });
 }
 
+// Gallery Carousel
+function initGalleryCarousel() {
+  const track = document.getElementById("carousel-track");
+  const dotsContainer = document.getElementById("carousel-dots");
+  const prevBtn = document.querySelector(".carousel-btn-prev");
+  const nextBtn = document.querySelector(".carousel-btn-next");
+  if (!track || !prevBtn || !nextBtn) return;
+
+  const slides = track.querySelectorAll(".carousel-slide");
+  const totalSlides = slides.length;
+  let currentIndex = 0;
+  let autoPlayTimer = null;
+
+  function getSlidesPerView() {
+    if (window.innerWidth <= 540) return 1;
+    if (window.innerWidth <= 1024) return 2;
+    return 3;
+  }
+
+  function getMaxIndex() {
+    return Math.max(0, totalSlides - getSlidesPerView());
+  }
+
+  function updateCarousel() {
+    const perView = getSlidesPerView();
+    const slideEl = slides[0];
+    const gap = parseFloat(getComputedStyle(slideEl).marginRight) || 32;
+    const slideWidth = slideEl.offsetWidth + gap;
+    track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+
+    // Update dots
+    if (dotsContainer) {
+      const dots = dotsContainer.querySelectorAll(".carousel-dot");
+      dots.forEach((dot, i) => dot.classList.toggle("active", i === currentIndex));
+    }
+  }
+
+  function buildDots() {
+    if (!dotsContainer) return;
+    dotsContainer.innerHTML = "";
+    const maxIdx = getMaxIndex();
+    for (let i = 0; i <= maxIdx; i++) {
+      const dot = document.createElement("button");
+      dot.className = "carousel-dot" + (i === 0 ? " active" : "");
+      dot.setAttribute("aria-label", `Go to slide ${i + 1}`);
+      dot.addEventListener("click", () => {
+        currentIndex = i;
+        updateCarousel();
+        resetAutoPlay();
+      });
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  function next() {
+    currentIndex = currentIndex >= getMaxIndex() ? 0 : currentIndex + 1;
+    updateCarousel();
+  }
+
+  function prev() {
+    currentIndex = currentIndex <= 0 ? getMaxIndex() : currentIndex - 1;
+    updateCarousel();
+  }
+
+  function resetAutoPlay() {
+    clearInterval(autoPlayTimer);
+    autoPlayTimer = setInterval(next, 4000);
+  }
+
+  nextBtn.addEventListener("click", () => { next(); resetAutoPlay(); });
+  prevBtn.addEventListener("click", () => { prev(); resetAutoPlay(); });
+
+  // Touch/swipe support
+  let startX = 0;
+  let isDragging = false;
+  track.addEventListener("touchstart", (e) => { startX = e.touches[0].clientX; isDragging = true; }, { passive: true });
+  track.addEventListener("touchend", (e) => {
+    if (!isDragging) return;
+    isDragging = false;
+    const diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) {
+      diff > 0 ? next() : prev();
+      resetAutoPlay();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (currentIndex > getMaxIndex()) currentIndex = getMaxIndex();
+    buildDots();
+    updateCarousel();
+  });
+
+  buildDots();
+  updateCarousel();
+  resetAutoPlay();
+}
+
 // Lightbox Modal for Gallery
 function initGalleryLightbox() {
   const lightbox = document.getElementById("lightbox");
@@ -130,14 +228,31 @@ function initGalleryLightbox() {
 }
 
 
-// Form Validation and Mock Success Response
+// Form Validation and Formspree Submission
 function initForms() {
+  // Show/hide "Other Services" text input
+  const serviceSelect = document.getElementById("service");
+  const otherServiceGroup = document.getElementById("other-service-group");
+  const otherServiceInput = document.getElementById("other-service");
+
+  if (serviceSelect && otherServiceGroup) {
+    serviceSelect.addEventListener("change", () => {
+      if (serviceSelect.value === "Other Services") {
+        otherServiceGroup.style.display = "block";
+        if (otherServiceInput) otherServiceInput.setAttribute("required", "required");
+      } else {
+        otherServiceGroup.style.display = "none";
+        if (otherServiceInput) otherServiceInput.removeAttribute("required");
+      }
+    });
+  }
+
   const forms = document.querySelectorAll("form");
   forms.forEach(form => {
     // Avoid double submit binding on search elements
     if (form.getAttribute("role") === "search") return;
 
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
 
       // Honeypot spam protection check
@@ -149,22 +264,46 @@ function initForms() {
 
       const submitBtn = form.querySelector('button[type="submit"]');
       const originalText = submitBtn ? submitBtn.innerHTML : "Submit";
+      const formspreeAction = form.getAttribute("action");
 
       if (submitBtn) {
         submitBtn.disabled = true;
         submitBtn.innerHTML = `Sending... <span class="spinner"></span>`;
       }
 
-      // Simulate API submit delay
-      setTimeout(() => {
-        showToast("Success! Your service request has been received. Our team will contact you shortly.");
-        form.reset();
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = originalText;
+      // If form has Formspree action, submit via fetch
+      if (formspreeAction && formspreeAction.includes("formspree.io")) {
+        try {
+          const formData = new FormData(form);
+          const response = await fetch(formspreeAction, {
+            method: "POST",
+            body: formData,
+            headers: { "Accept": "application/json" }
+          });
+
+          if (response.ok) {
+            showToast("Success! Your service request has been received. Our team will contact you shortly.");
+            form.reset();
+            if (otherServiceGroup) otherServiceGroup.style.display = "none";
+          } else {
+            const data = await response.json();
+            showToast(data.error || "Something went wrong. Please try again or WhatsApp us directly.");
+          }
+        } catch (err) {
+          showToast("Network error. Please try again or WhatsApp us directly.");
         }
-        
-      }, 1500);
+      } else {
+        // Fallback for forms without Formspree
+        setTimeout(() => {
+          showToast("Success! Your service request has been received. Our team will contact you shortly.");
+          form.reset();
+        }, 1500);
+      }
+
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+      }
     });
   });
 }

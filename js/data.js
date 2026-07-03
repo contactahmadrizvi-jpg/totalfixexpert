@@ -140,7 +140,7 @@ const SERVICES_DATA = [
     description: "Commercial shop fitting, branding-friendly design upgrades, lighting layouts, and partition works.",
     fullDescription: "Make your retail store stand out to Omani shoppers. We renovate commercial units with beautiful showcase glass, sturdy product shelves, modern checkout counters, high-end tiling, and specialized lighting systems designed to highlight your products.",
     icon: `<svg viewBox="0 0 24 24"><path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"/></svg>`,
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.pexels.com/photos/6474133/pexels-photo-6474133.jpeg?auto=compress&w=1260&h=750&dpr=1",
     benefits: [
       "Branding integration options",
       "Compliant with commercial regulations in Oman",
@@ -206,7 +206,7 @@ const SERVICES_DATA = [
     description: "Bespoke kitchen cabinets, walk-in closets, and storage wardrobes designed for space optimization.",
     fullDescription: "Maximize storage space elegantly. We build custom kitchen cabinets, modern pantries, bedroom wardrobes, and bathroom vanity sets. We use soft-close hydraulic hinges, premium laminated sheets, and handle hardware of your choice.",
     icon: `<svg viewBox="0 0 24 24"><path d="M4 4h16v16H4V4zm2 2v6h5V6H6zm7 0v6h5V6h-5zm-7 8v4h5v-4H6zm7 0v4h5v-4h-5z"/></svg>`,
-    image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?auto=format&fit=crop&w=600&q=80",
     benefits: [
       "Heavy duty soft-close hinges & channels",
       "High moisture-resistant (HMR) wood options",
@@ -285,6 +285,50 @@ const SERVICES_DATA = [
       "Functional testing of the repair/mount",
       "Cleaning of concrete dust or work residue"
     ]
+  },
+  {
+    id: "painting",
+    category: "painting",
+    title: "Painting Services",
+    subtitle: "Professional interior & exterior painting",
+    description: "High-quality wall painting, texture finishes, accent walls, and complete property repainting by skilled painters.",
+    fullDescription: "Transform any space with our professional painting services. We handle interior and exterior painting for homes, offices, and commercial spaces. Our team uses premium paints, proper surface preparation, and clean-edge techniques to deliver flawless finishes. From single accent walls to full property repainting, we ensure neat, durable, and beautiful results every time.",
+    icon: `<svg viewBox="0 0 24 24"><path d="M18 4V3c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V6h1v4H9v11c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-9h8V4h-3z"/></svg>`,
+    image: "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=600&q=80",
+    benefits: [
+      "Premium branded paints & finishes",
+      "Proper surface prep (sanding, priming, filling)",
+      "Clean edge work and zero splatter guarantee",
+      "Interior, exterior & accent wall options"
+    ],
+    process: [
+      "Surface inspection and color consultation",
+      "Furniture protection and masking",
+      "Priming, sanding, and crack filling",
+      "Two-coat application and final cleanup"
+    ]
+  },
+  {
+    id: "cleaning",
+    category: "cleaning",
+    title: "Cleaning Services",
+    subtitle: "Deep cleaning & post-renovation cleanup",
+    description: "Thorough residential and commercial cleaning including deep cleaning, move-in/move-out, and post-construction cleanup.",
+    fullDescription: "Keep your property spotless with our professional cleaning services. We provide deep cleaning for villas, apartments, and offices, including post-renovation debris removal, move-in/move-out cleaning, and regular maintenance cleans. Our trained staff uses eco-friendly products and industrial-grade equipment to deliver hygienic, fresh, and sparkling results.",
+    icon: `<svg viewBox="0 0 24 24"><path d="M15 3l-1 2H7v2h1l1 12h6l1-12h1V5h-7l1-2H8zm-2 14h-2v-3h2v3zm4.5-9.5l-1 8h-7l-1-8h9z"/></svg>`,
+    image: "https://images.pexels.com/photos/6196223/pexels-photo-6196223.jpeg",
+    benefits: [
+      "Eco-friendly cleaning products",
+      "Post-renovation & construction cleanup",
+      "Move-in / move-out deep cleaning",
+      "Trained and insured cleaning staff"
+    ],
+    process: [
+      "Property walkthrough and scope assessment",
+      "Dusting, vacuuming, and surface wiping",
+      "Deep cleaning of kitchens, bathrooms & floors",
+      "Final inspection and fragrance finishing"
+    ]
   }
 ];
 
@@ -300,7 +344,7 @@ const TESTIMONIALS_DATA = [
     name: "Sarah Williams",
     location: "Madinat Qaboos, Muscat",
     rating: 5,
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80",
+    avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&q=80",
     comment: "I hired them for custom bedroom cupboards and flat-pack assembly. The carpenters were polite, tidy, and did a magnificent job. The soft-close finish is top-tier."
   },
   {
@@ -314,7 +358,7 @@ const TESTIMONIALS_DATA = [
     name: "Amna Al-Zadjali",
     location: "Qurum, Muscat",
     rating: 5,
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80",
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&q=80",
     comment: "Fast, reliable, and affordable handyman services. I needed curtain rods installed and a large TV mounted on a concrete wall. The handyman arrived with all tools and completed the work cleanly."
   }
 ];
