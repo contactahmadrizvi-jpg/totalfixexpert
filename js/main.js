@@ -1,7 +1,6 @@
 // Fix Experts Oman - Main Interactive Script
 document.addEventListener("DOMContentLoaded", () => {
   initNavigation();
-  initFaqAccordion();
   initBeforeAfterSlider();
   initGalleryLightbox();
   initExitIntentPopup();
@@ -55,32 +54,6 @@ function initNavigation() {
   });
 }
 
-// FAQ Accordion Toggle
-function initFaqAccordion() {
-  const faqItems = document.querySelectorAll(".faq-item");
-  faqItems.forEach(item => {
-    const questionBtn = item.querySelector(".faq-question");
-    if (questionBtn) {
-      questionBtn.addEventListener("click", () => {
-        const isActive = item.classList.contains("active");
-        
-        // Close all other items
-        faqItems.forEach(otherItem => {
-          otherItem.classList.remove("active");
-          const ans = otherItem.querySelector(".faq-answer");
-          if (ans) ans.style.maxHeight = null;
-        });
-
-        // Toggle selected item
-        if (!isActive) {
-          item.classList.add("active");
-          const ans = item.querySelector(".faq-answer");
-          ans.style.maxHeight = ans.scrollHeight + "px";
-        }
-      });
-    }
-  });
-}
 
 // Before/After Slider Interaction
 function initBeforeAfterSlider() {
@@ -208,10 +181,17 @@ function initForms() {
 
     form.addEventListener("submit", (e) => {
       e.preventDefault();
-      
+
+      // Honeypot spam protection check
+      const honeypot = form.querySelector('.hp-field input');
+      if (honeypot && honeypot.value.trim() !== '') {
+        // Bot detected - silently reject without showing error
+        return;
+      }
+
       const submitBtn = form.querySelector('button[type="submit"]');
       const originalText = submitBtn ? submitBtn.innerHTML : "Submit";
-      
+
       if (submitBtn) {
         submitBtn.disabled = true;
         submitBtn.innerHTML = `Sending... <span class="spinner"></span>`;
@@ -290,46 +270,6 @@ function initDynamicComponents() {
     `).join("");
   }
 
-  // FAQ render
-  const faqWrapper = document.getElementById("faqs-wrapper");
-  if (faqWrapper && typeof FAQS_DATA !== "undefined") {
-    faqWrapper.innerHTML = FAQS_DATA.map(f => `
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          ${f.question}
-          <span class="faq-icon-toggle">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>${f.answer}</p>
-        </div>
-      </div>
-    `).join("");
-    initFaqAccordion(); // re-initialize listener
-  }
-
-  // Blog posts render
-  const blogWrapper = document.getElementById("blog-wrapper");
-  if (blogWrapper && typeof BLOG_DATA !== "undefined") {
-    blogWrapper.innerHTML = BLOG_DATA.map(post => `
-      <article class="blog-card">
-        <div class="blog-header-img">
-          <img src="${post.image}" alt="${post.title}" loading="lazy">
-        </div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span>${post.category}</span>
-            <span>•</span>
-            <span>${post.date}</span>
-          </div>
-          <h3>${post.title}</h3>
-          <p>${post.excerpt}</p>
-          <div class="blog-footer">
-            <a href="blog.html#${post.id}" class="link-arrow">Read Full Article &rarr;</a>
-          </div>
-        </div>
-      </article>
-    `).join("");
-  }
 
   // Services filtering (Home / Services pages)
   const serviceFilters = document.querySelectorAll(".filter-btn");
