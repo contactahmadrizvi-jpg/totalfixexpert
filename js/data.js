@@ -140,7 +140,7 @@ const SERVICES_DATA = [
     description: "Commercial shop fitting, branding-friendly design upgrades, lighting layouts, and partition works.",
     fullDescription: "Make your retail store stand out to Omani shoppers. We renovate commercial units with beautiful showcase glass, sturdy product shelves, modern checkout counters, high-end tiling, and specialized lighting systems designed to highlight your products.",
     icon: `<svg viewBox="0 0 24 24"><path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"/></svg>`,
-    image: "https://images.pexels.com/photos/6474133/pexels-photo-6474133.jpeg?auto=compress&w=1260&h=750&dpr=1",
+    image: "https://images.pexels.com/photos/6474133/pexels-photo-6474133.jpeg?auto=compress&cs=tinysrgb&w=600",
     benefits: [
       "Branding integration options",
       "Compliant with commercial regulations in Oman",
@@ -316,7 +316,7 @@ const SERVICES_DATA = [
     description: "Thorough residential and commercial cleaning including deep cleaning, move-in/move-out, and post-construction cleanup.",
     fullDescription: "Keep your property spotless with our professional cleaning services. We provide deep cleaning for villas, apartments, and offices, including post-renovation debris removal, move-in/move-out cleaning, and regular maintenance cleans. Our trained staff uses eco-friendly products and industrial-grade equipment to deliver hygienic, fresh, and sparkling results.",
     icon: `<svg viewBox="0 0 24 24"><path d="M15 3l-1 2H7v2h1l1 12h6l1-12h1V5h-7l1-2H8zm-2 14h-2v-3h2v3zm4.5-9.5l-1 8h-7l-1-8h9z"/></svg>`,
-    image: "https://images.pexels.com/photos/6196223/pexels-photo-6196223.jpeg",
+    image: "https://images.pexels.com/photos/6196223/pexels-photo-6196223.jpeg?auto=compress&cs=tinysrgb&w=600",
     benefits: [
       "Eco-friendly cleaning products",
       "Post-renovation & construction cleanup",
