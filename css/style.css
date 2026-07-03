@@ -1277,63 +1277,6 @@ section {
   border: 0;
 }
 
-/* Exit Intent Popup */
-.exit-popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(11, 22, 40, 0.8);
-  backdrop-filter: blur(5px);
-  z-index: 3000;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem;
-}
-
-.exit-popup-content {
-  background: var(--primary);
-  color: #FFFFFF;
-  max-width: 500px;
-  width: 100%;
-  border-radius: var(--border-radius);
-  padding: 3rem;
-  position: relative;
-  text-align: center;
-  box-shadow: 0 25px 60px rgba(0,0,0,0.5);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.exit-popup-close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: none;
-  border: none;
-  color: rgba(255,255,255,0.7);
-  font-size: 1.8rem;
-  cursor: pointer;
-  transition: var(--transition-smooth);
-}
-
-.exit-popup-close:hover {
-  color: #FFFFFF;
-}
-
-.exit-popup h3 {
-  color: var(--accent-gold);
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-.exit-popup p {
-  font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 2rem;
-}
-
 /* Footer Section */
 footer {
   background-color: var(--primary);

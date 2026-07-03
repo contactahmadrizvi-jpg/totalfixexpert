@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initNavigation();
   initBeforeAfterSlider();
   initGalleryLightbox();
-  initExitIntentPopup();
   initForms();
   initDynamicComponents();
 });
@@ -130,47 +129,6 @@ function initGalleryLightbox() {
   });
 }
 
-// Exit Intent Popup
-function initExitIntentPopup() {
-  const exitPopup = document.getElementById("exit-popup");
-  const closeBtn = document.getElementById("exit-popup-close");
-  if (!exitPopup) return;
-
-  let shown = false;
-
-  const showPopup = () => {
-    if (shown) return;
-    exitPopup.style.display = "flex";
-    shown = true;
-    localStorage.setItem("exitPopupShown", "true");
-  };
-
-  // Trigger when mouse moves off the top of page (desktop intent)
-  document.addEventListener("mouseleave", (e) => {
-    if (e.clientY < 0) {
-      showPopup();
-    }
-  });
-
-  // Trigger after 25 seconds on mobile
-  setTimeout(() => {
-    if (window.innerWidth <= 768) {
-      showPopup();
-    }
-  }, 25000);
-
-  if (closeBtn) {
-    closeBtn.addEventListener("click", () => {
-      exitPopup.style.display = "none";
-    });
-  }
-
-  exitPopup.addEventListener("click", (e) => {
-    if (e.target === exitPopup) {
-      exitPopup.style.display = "none";
-    }
-  });
-}
 
 // Form Validation and Mock Success Response
 function initForms() {
@@ -206,9 +164,6 @@ function initForms() {
           submitBtn.innerHTML = originalText;
         }
         
-        // Hide exit popup if open
-        const exitPopup = document.getElementById("exit-popup");
-        if (exitPopup) exitPopup.style.display = "none";
       }, 1500);
     });
   });
