@@ -8,7 +8,7 @@ const SERVICES_DATA = [
     description: "Stress-free residential relocation with professional packing, secure loading, and precise setup in your new home.",
     fullDescription: "Our premium house shifting service is designed to take the stress out of moving. From small apartments to large villas, our highly trained team handles every step. We use multi-layer bubble wrap, premium carton boxes, and heavy-duty protective blankets to secure your furniture, electronics, and delicate items. Our service includes dismantling of beds and wardrobes, secure transport in closed GPS-tracked moving trucks, and complete reassembly and positioning at your new location.",
     icon: `<svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>`,
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80",
+    image: "assets/services1.jpeg",
     benefits: [
       "Expert dismantling & reassembly",
       "Premium packing materials used",
@@ -30,7 +30,7 @@ const SERVICES_DATA = [
     description: "Minimize business downtime with our organized corporate moving and IT equipment handling services.",
     fullDescription: "Moving offices requires speed, organization, and careful handling. We specialize in relocating corporate spaces with minimum disruption. Our team packs files, IT infrastructure, servers, and office furniture systematically, labeling everything for easy setup. We work after-hours or during weekends to ensure your operations remain active.",
     icon: `<svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm10 12h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V9h2v2zm0-4h-2V5h2v2zm4 12h-2v-2h2v2zm0-4h-2v-2h2v2z"/></svg>`,
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80",
+    image: "assets/services2.jpeg",
     benefits: [
       "Weekend & night shifting available",
       "IT equipment & server packing expertise",
@@ -52,7 +52,7 @@ const SERVICES_DATA = [
     description: "Exclusive villa relocation services tailored for spacious residences, landscaping, and outdoor setups.",
     fullDescription: "Villa moving involves complex logistics, valuable assets, and large furniture sets. We specialize in villa relocations, ensuring fine art, garden decor, play structures, and high-end home systems are safely packaged and moved by professionals.",
     icon: `<svg viewBox="0 0 24 24"><path d="M17 11V3H7v4H3v14h18V11h-2zm-8 8H5v-2h4v2zm0-4H5v-2h4v2zm0-4H5V9h4v2zm6 8h-4v-6h4v6zm6 0h-4v-2h4v2zm0-4h-4v-2h4v2z"/></svg>`,
-    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80",
+    image: "assets/services3.jpeg",
     benefits: [
       "Handling of large and heavy assets",
       "Chandelier & fine-art packaging",
@@ -74,7 +74,7 @@ const SERVICES_DATA = [
     description: "Secure relocation of retail displays, inventories, fixtures, and delicate product stocks.",
     fullDescription: "Our shop shifting service is structured for retail stores, supermarkets, and boutiques. We pack inventories securely to prevent damage and transport display counters, cash registers, racks, and signage carefully to your new commercial space.",
     icon: `<svg viewBox="0 0 24 24"><path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"/></svg>`,
-    image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=600&q=80",
+    image: "assets/services4.jpeg",
     benefits: [
       "Inventory packing & safety checks",
       "Safe transport of glass fixtures & displays",
@@ -96,7 +96,7 @@ const SERVICES_DATA = [
     description: "Premium remodeling for your kitchen, bathrooms, and living areas with Omani design elements.",
     fullDescription: "Transform your living space with our premium home renovation services. We offer comprehensive remodeling, including flooring upgrades, drywall installations, modern false ceilings, wall painting, kitchen cabinetry redesign, and bathroom transformations. We integrate premium materials and contemporary designs that match the luxury style expected in Oman.",
     icon: `<svg viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>`,
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80",
+    image: "assets/services5.jpeg",
     benefits: [
       "Custom 3D layout planning",
       "Premium materials & sanitaryware selection",
@@ -118,7 +118,7 @@ const SERVICES_DATA = [
     description: "Refresh your bedroom, kids' room, guest room, or lounge with custom partitions, lighting, and finishes.",
     fullDescription: "Give any single room a complete facelift. Whether it's upgrading a master bedroom with modern accent walls and indirect lighting or building a cozy, functional family lounge, our experts deliver high-end woodwork, gypsum board design, painting, and smart lighting setup.",
     icon: `<svg viewBox="0 0 24 24"><path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-9 14H5v-5h5v5zm9 0h-7v-5h7v5zm0-7H5V6h14v5z"/></svg>`,
-    image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=600&q=80",
+    image: "assets/services6.jpeg",
     benefits: [
       "Custom drywall & ceiling work",
       "Vibrant paint, wallpaper, and panel designs",
@@ -140,7 +140,7 @@ const SERVICES_DATA = [
     description: "Commercial shop fitting, branding-friendly design upgrades, lighting layouts, and partition works.",
     fullDescription: "Make your retail store stand out to Omani shoppers. We renovate commercial units with beautiful showcase glass, sturdy product shelves, modern checkout counters, high-end tiling, and specialized lighting systems designed to highlight your products.",
     icon: `<svg viewBox="0 0 24 24"><path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"/></svg>`,
-    image: "https://images.pexels.com/photos/6474133/pexels-photo-6474133.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: "assets/services7.jpeg",
     benefits: [
       "Branding integration options",
       "Compliant with commercial regulations in Oman",
@@ -162,7 +162,7 @@ const SERVICES_DATA = [
     description: "Restore your dining tables, premium sofas, antique cupboards, and cabinets back to life.",
     fullDescription: "Don't discard expensive furniture when it shows signs of damage. Our experienced carpenters specialize in repairing structural joints, fixing broken drawer sliders, polishing old wooden surfaces, and re-upholstering luxury sofas, ensuring they look new again.",
     icon: `<svg viewBox="0 0 24 24"><path d="M19 13H5v-2h14v2z"/></svg>`,
-    image: "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=600&q=80",
+    image: "assets/services8.jpeg",
     benefits: [
       "High-grade premium wood polish",
       "Structural reinforcement for squeaky/wobbly items",
@@ -184,7 +184,7 @@ const SERVICES_DATA = [
     description: "Expert custom carpentry for shelves, partitioning, wooden frames, and general installations.",
     fullDescription: "From building custom TV consoles to fitting interior wooden doors, our carpenter service in Muscat handles all woodworks. We source high-quality MDF, solid wood, and plywood, delivering high-precision craftsmanship for all household needs.",
     icon: `<svg viewBox="0 0 24 24"><path d="M19.5 3.5L18 2l-1.5 1.5L15 2l-1.5 1.5L12 2l-1.5 1.5L9 2l-1.5 1.5L6 2v16h12V3.5h1.5zM12 11H8v-2h4v2zm0-4H8V5h4v2zm4 8H8v-2h8v2z"/></svg>`,
-    image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=600&q=80",
+    image: "assets/services9.jpeg",
     benefits: [
       "Precision cut & clean joint seals",
       "Eco-friendly wood treatments",
@@ -206,7 +206,7 @@ const SERVICES_DATA = [
     description: "Bespoke kitchen cabinets, walk-in closets, and storage wardrobes designed for space optimization.",
     fullDescription: "Maximize storage space elegantly. We build custom kitchen cabinets, modern pantries, bedroom wardrobes, and bathroom vanity sets. We use soft-close hydraulic hinges, premium laminated sheets, and handle hardware of your choice.",
     icon: `<svg viewBox="0 0 24 24"><path d="M4 4h16v16H4V4zm2 2v6h5V6H6zm7 0v6h5V6h-5zm-7 8v4h5v-4H6zm7 0v4h5v-4h-5z"/></svg>`,
-    image: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?auto=format&fit=crop&w=600&q=80",
+    image: "assets/services10.jpeg",
     benefits: [
       "Heavy duty soft-close hinges & channels",
       "High moisture-resistant (HMR) wood options",
@@ -228,7 +228,7 @@ const SERVICES_DATA = [
     description: "Safe assembly of luxury beds, custom headboards, and structural squeak removal services.",
     fullDescription: "A shaky or squeaky bed disrupts your sleep. We specialize in assembling imported flat-pack beds (IKEA, Home Centre, Danube) and reinforcing old bed frames. We replace broken slats, fix center beams, and secure hydraulic storage beds.",
     icon: `<svg viewBox="0 0 24 24"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>`,
-    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=80",
+    image: "assets/services11.jpeg",
     benefits: [
       "Eradicate bed squeaks & structural wobble",
       "Hydraulic lift-up bed repair specialist",
@@ -250,7 +250,7 @@ const SERVICES_DATA = [
     description: "Hassle-free assembly of wardrobes, dining tables, desks, drawers, and TV units.",
     fullDescription: "Avoid the complex instructions of flat-pack furniture. Our specialists assemble products from IKEA, Home Box, Home Centre, and online international brands in a fraction of the time. We make sure alignments are clean, doors hang perfectly, and drawers slide smoothly.",
     icon: `<svg viewBox="0 0 24 24"><path d="M4 18v3h3v-3h10v3h3v-3h1v-6H3v6h1zM3 5v6h18V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2z"/></svg>`,
-    image: "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=600&q=80",
+    image: "assets/services12.jpeg",
     benefits: [
       "Fast assembly using specialized hand tools",
       "Wall anchoring for children safety (anti-tip)",
@@ -272,7 +272,7 @@ const SERVICES_DATA = [
     description: "TV mounting, curtain hanging, shelf installation, lock replacement, and quick electrical/plumbing repairs.",
     fullDescription: "From hanging heavy mirrors to fixing running toilets, our general handyman services cover all odd jobs around the house. We bring our own high-end hammer drills, wall plugs, screwdrivers, and replacement accessories to fix everything safely.",
     icon: `<svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5.1-2.4-7.5-1.3L8 5.3 5.3 8 1.7 4.4C.6 6.8 1 9.9 3 11.9c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.4-.4.4-1.1 0-1.4z"/></svg>`,
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80",
+    image: "assets/services13.jpeg",
     benefits: [
       "Sturdy concrete wall mounting",
       "Electrical bulb, switch & socket repair",
@@ -294,7 +294,7 @@ const SERVICES_DATA = [
     description: "High-quality wall painting, texture finishes, accent walls, and complete property repainting by skilled painters.",
     fullDescription: "Transform any space with our professional painting services. We handle interior and exterior painting for homes, offices, and commercial spaces. Our team uses premium paints, proper surface preparation, and clean-edge techniques to deliver flawless finishes. From single accent walls to full property repainting, we ensure neat, durable, and beautiful results every time.",
     icon: `<svg viewBox="0 0 24 24"><path d="M18 4V3c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V6h1v4H9v11c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-9h8V4h-3z"/></svg>`,
-    image: "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=600&q=80",
+    image: "assets/services14.png",
     benefits: [
       "Premium branded paints & finishes",
       "Proper surface prep (sanding, priming, filling)",
@@ -316,7 +316,7 @@ const SERVICES_DATA = [
     description: "Thorough residential and commercial cleaning including deep cleaning, move-in/move-out, and post-construction cleanup.",
     fullDescription: "Keep your property spotless with our professional cleaning services. We provide deep cleaning for villas, apartments, and offices, including post-renovation debris removal, move-in/move-out cleaning, and regular maintenance cleans. Our trained staff uses eco-friendly products and industrial-grade equipment to deliver hygienic, fresh, and sparkling results.",
     icon: `<svg viewBox="0 0 24 24"><path d="M15 3l-1 2H7v2h1l1 12h6l1-12h1V5h-7l1-2H8zm-2 14h-2v-3h2v3zm4.5-9.5l-1 8h-7l-1-8h9z"/></svg>`,
-    image: "https://images.pexels.com/photos/6196223/pexels-photo-6196223.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: "assets/services14.png",
     benefits: [
       "Eco-friendly cleaning products",
       "Post-renovation & construction cleanup",
