@@ -272,7 +272,7 @@ const SERVICES_DATA = [
     description: "TV mounting, curtain hanging, shelf installation, lock replacement, and quick electrical/plumbing repairs.",
     fullDescription: "From hanging heavy mirrors to fixing running toilets, our general handyman services cover all odd jobs around the house. We bring our own high-end hammer drills, wall plugs, screwdrivers, and replacement accessories to fix everything safely.",
     icon: `<svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5.1-2.4-7.5-1.3L8 5.3 5.3 8 1.7 4.4C.6 6.8 1 9.9 3 11.9c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.4-.4.4-1.1 0-1.4z"/></svg>`,
-    image: "assets/services13.jpeg",
+    image: "assets/services10.jpeg",
     benefits: [
       "Sturdy concrete wall mounting",
       "Electrical bulb, switch & socket repair",
@@ -294,7 +294,7 @@ const SERVICES_DATA = [
     description: "High-quality wall painting, texture finishes, accent walls, and complete property repainting by skilled painters.",
     fullDescription: "Transform any space with our professional painting services. We handle interior and exterior painting for homes, offices, and commercial spaces. Our team uses premium paints, proper surface preparation, and clean-edge techniques to deliver flawless finishes. From single accent walls to full property repainting, we ensure neat, durable, and beautiful results every time.",
     icon: `<svg viewBox="0 0 24 24"><path d="M18 4V3c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V6h1v4H9v11c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-9h8V4h-3z"/></svg>`,
-    image: "assets/services14.png",
+    image: "assets/services13.jpeg",
     benefits: [
       "Premium branded paints & finishes",
       "Proper surface prep (sanding, priming, filling)",
@@ -328,6 +328,116 @@ const SERVICES_DATA = [
       "Dusting, vacuuming, and surface wiping",
       "Deep cleaning of kitchens, bathrooms & floors",
       "Final inspection and fragrance finishing"
+    ]
+  },
+  {
+    id: "electrical-work",
+    category: "installation",
+    title: "Electrical Work",
+    subtitle: "Licensed electrical repairs & installations",
+    description: "Safe electrical wiring, socket installation, lighting setup, fan mounting, and circuit breaker repairs by certified technicians.",
+    fullDescription: "Our licensed electricians handle all residential and commercial electrical work in Muscat. From rewiring old circuits to installing modern LED lighting, ceiling fans, distribution boards, and smart switches, we ensure every job meets Oman safety standards. We use premium cables, connectors, and branded components for long-lasting results.",
+    icon: `<svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>`,
+    image: "https://images.pexels.com/photos/38264253/pexels-photo-38264253.jpeg?auto=compress&cs=tinysrgb&w=800",
+    benefits: [
+      "Certified & licensed electricians",
+      "Compliant with Oman safety regulations",
+      "Premium wiring & branded components",
+      "Emergency same-day service available"
+    ],
+    process: [
+      "Electrical system inspection & fault diagnosis",
+      "Detailed quote with material breakdown",
+      "Safe wiring, installation & connections",
+      "Testing, certification & cleanup"
+    ]
+  },
+  {
+    id: "plumbing-services",
+    category: "installation",
+    title: "Plumbing Services",
+    subtitle: "Expert plumbing repair & installation",
+    description: "Leak fixes, pipe replacement, tap installation, water heater setup, drain cleaning, and bathroom fittings by skilled plumbers.",
+    fullDescription: "From dripping taps to burst pipes, our professional plumbers provide fast and reliable plumbing services across Muscat. We handle water heater installation, bathroom fixture fitting, kitchen sink repairs, drain unblocking, and complete pipe replacements. Our team carries quality parts and tools to resolve issues in a single visit.",
+    icon: `<svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14h-2v-2h2v2zm0-4h-2V8h2v4zm4 4h-2v-2h2v2zm0-4h-2V8h2v4z"/></svg>`,
+    image: "https://images.pexels.com/photos/29226620/pexels-photo-29226620.jpeg?auto=compress&cs=tinysrgb&w=800",
+    benefits: [
+      "Experienced & insured plumbers",
+      "Same-day leak & burst pipe repair",
+      "Water heater installation & servicing",
+      "Quality parts with warranty"
+    ],
+    process: [
+      "Issue inspection & leak detection",
+      "Transparent quote with parts cost",
+      "Repair or replacement with minimal disruption",
+      "Pressure testing & final cleanup"
+    ]
+  },
+  {
+    id: "ac-maintenance",
+    category: "installation",
+    title: "AC Maintenance",
+    subtitle: "AC servicing, repair & installation",
+    description: "Professional AC deep cleaning, gas refilling, compressor repair, thermostat fixes, and new unit installation.",
+    fullDescription: "Keep your cooling system running efficiently in Oman's hot climate. Our AC technicians provide comprehensive services including deep cleaning, filter replacement, gas refilling (R410A/R32), compressor repair, thermostat calibration, and complete split/window AC installation. We service all major brands including LG, Samsung, Daikin, Carrier, and Gree.",
+    icon: `<svg viewBox="0 0 24 24"><path d="M22 11h-4.17l3.24-3.24-1.41-1.42L15 11h-2V9l4.66-4.66-1.42-1.41L13 6.17V2h-2v4.17L7.76 2.93 6.34 4.34 11 9v2H9L4.34 6.34 2.93 7.76 6.17 11H2v2h4.17l-3.24 3.24 1.41 1.42L9 13h2v2l-4.66 4.66 1.42 1.41L11 17.83V22h2v-4.17l3.24 3.24 1.42-1.41L13 15v-2h2l4.66 4.66 1.41-1.42L17.83 13H22z"/></svg>`,
+    image: "https://images.pexels.com/photos/33671149/pexels-photo-33671149.jpeg?auto=compress&cs=tinysrgb&w=800",
+    benefits: [
+      "All major AC brands serviced",
+      "Deep cleaning & sanitization",
+      "Gas refilling with leak check",
+      "Annual maintenance contracts available"
+    ],
+    process: [
+      "AC condition assessment & performance check",
+      "Filter cleaning or replacement",
+      "Coil cleaning, gas top-up & electrical check",
+      "Cooling test & maintenance report"
+    ]
+  },
+  {
+    id: "furniture-installation",
+    category: "installation",
+    title: "Furniture Installation",
+    subtitle: "Professional furniture setup & mounting",
+    description: "Expert assembly and wall-mounting of beds, wardrobes, TV units, kitchen racks, shelves, and office furniture.",
+    fullDescription: "We provide professional furniture installation services for homes and offices in Muscat. Whether you need a new bed assembled, wall-mounted TV unit, kitchen shelves installed, or office workstations set up, our team handles it with precision. We bring all necessary tools, hardware, and wall anchors to ensure secure, level, and damage-free installation.",
+    icon: `<svg viewBox="0 0 24 24"><path d="M4 18v3h3v-3h10v3h3v-3h1v-6H3v6h1zM3 5v6h18V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2z"/></svg>`,
+    image: "https://images.pexels.com/photos/5691502/pexels-photo-5691502.jpeg?auto=compress&cs=tinysrgb&w=800",
+    benefits: [
+      "Beds, wardrobes, desks & TV units",
+      "Wall mounting with heavy-duty anchors",
+      "Anti-tip safety anchoring included",
+      "Zero scratch floor protection"
+    ],
+    process: [
+      "Unboxing and parts inventory check",
+      "Frame assembly per manufacturer specs",
+      "Wall mounting & level calibration",
+      "Final stability test & cleanup"
+    ]
+  },
+  {
+    id: "home-repair",
+    category: "installation",
+    title: "Home Repair & Maintenance",
+    subtitle: "Complete home upkeep & fix-it service",
+    description: "All-in-one home maintenance covering door repairs, window fixes, tile replacement, paint touch-ups, and general repairs.",
+    fullDescription: "Our comprehensive home repair and maintenance service covers everything your property needs to stay in top condition. From fixing squeaky doors and cracked tiles to repainting walls and replacing window seals, our multi-skilled technicians handle it all. Perfect for landlords, property managers, and homeowners who want a single trusted partner for all maintenance tasks.",
+    icon: `<svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5.1-2.4-7.5-1.3L8 5.3 5.3 8 1.7 4.4C.6 6.8 1 9.9 3 11.9c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.4-.4.4-1.1 0-1.4z"/></svg>`,
+    image: "https://images.pexels.com/photos/11398216/pexels-photo-11398216.jpeg?auto=compress&cs=tinysrgb&w=800",
+    benefits: [
+      "One call for all home repairs",
+      "Door, window, tile & wall fixes",
+      "Paint touch-ups & sealant work",
+      "Ideal for landlords & property managers"
+    ],
+    process: [
+      "Property walkthrough & repair checklist",
+      "Consolidated quote for all jobs",
+      "Multi-trade technician dispatch",
+      "Quality check & handover"
     ]
   }
 ];

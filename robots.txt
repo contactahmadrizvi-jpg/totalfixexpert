@@ -3,4 +3,4 @@ Allow: /
 Disallow: /js/
 Disallow: /css/
 
-Sitemap: https://totalfixexpertoman.com/sitemap.xml
+Sitemap: https://www.totalfixexpertoman.com/sitemap.xml
