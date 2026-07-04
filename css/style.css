@@ -1632,17 +1632,20 @@ footer {
 /* Adjust floating widgets so they sit above the bottom nav */
 @media (max-width: 768px) {
   section {
-    padding: 3.5rem 1.5rem;
-    padding-bottom: calc(3.5rem + 70px); /* clearance for bottom nav */
+    padding: 3rem 1rem;
+    padding-bottom: calc(3rem + 70px); /* clearance for bottom nav */
   }
   .section-title-wrapper h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
+  }
+  .section-title-wrapper p {
+    font-size: 0.9rem;
   }
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   .hero {
-    padding-bottom: calc(80px + 70px); /* hero extra bottom pad */
+    padding-bottom: calc(60px + 70px); /* hero extra bottom pad */
   }
   .hero-trust-bar {
     flex-wrap: wrap;
@@ -1658,6 +1661,88 @@ footer {
     font-size: 0.75rem;
     padding: 0.4rem 0.9rem;
   }
+
+  /* Services grid: 2 cards per row on mobile */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .service-image-container {
+    height: 140px;
+  }
+  .service-card-body {
+    padding: 1rem;
+  }
+  .service-card-body h3 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+  .service-card-body p {
+    font-size: 0.82rem;
+    margin-bottom: 0.8rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .service-icon-floating {
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+    bottom: 10px;
+    right: 10px;
+  }
+  .service-icon-floating svg {
+    width: 18px;
+    height: 18px;
+  }
+  .link-arrow {
+    font-size: 0.8rem;
+  }
+
+  /* Process steps: 2 per row on mobile */
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 1rem;
+  }
+  .process-number {
+    width: 48px;
+    height: 48px;
+    font-size: 1.2rem;
+    margin: 0 auto 0.8rem;
+  }
+  .process-step h3 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+  .process-step p {
+    font-size: 0.82rem;
+  }
+
+  /* Reasons/Why choose us: 2 per row */
+  .reasons-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .reason-card {
+    padding: 1.25rem;
+  }
+  .reason-card h3 {
+    font-size: 1rem;
+  }
+  .reason-card p {
+    font-size: 0.82rem;
+  }
+
+  /* Gallery filters compact */
+  .gallery-filters {
+    gap: 0.5rem;
+  }
+  .filter-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.78rem;
+  }
+
   .nav-links {
     display: none;
   }
@@ -1686,6 +1771,56 @@ footer {
   }
   .hero-buttons .btn {
     width: 100%;
+  }
+  /* Keep 2 columns even on very small screens */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  .service-image-container {
+    height: 120px;
+  }
+  .service-card-body {
+    padding: 0.75rem;
+  }
+  .service-card-body h3 {
+    font-size: 0.9rem;
+  }
+  .service-card-body p {
+    font-size: 0.78rem;
+    -webkit-line-clamp: 2;
+  }
+  .service-card-footer {
+    display: block;
+  }
+  .link-arrow {
+    font-size: 0.75rem;
+  }
+  .service-icon-floating {
+    width: 28px;
+    height: 28px;
+    padding: 5px;
+    bottom: 8px;
+    right: 8px;
+  }
+  .service-icon-floating svg {
+    width: 16px;
+    height: 16px;
+  }
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem 0.75rem;
+  }
+  .reasons-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+  .reason-card {
+    padding: 1rem;
+  }
+  .filter-btn {
+    padding: 0.35rem 0.6rem;
+    font-size: 0.72rem;
   }
 }
 
