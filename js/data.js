@@ -22,72 +22,7 @@ const SERVICES_DATA = [
       "Unpacking, assembly, and setup"
     ]
   },
-  {
-    id: "office-shifting",
-    category: "moving",
-    title: "Office Shifting",
-    subtitle: "Efficient corporate and office relocation",
-    description: "Minimize business downtime with our organized corporate moving and IT equipment handling services.",
-    fullDescription: "Moving offices requires speed, organization, and careful handling. We specialize in relocating corporate spaces with minimum disruption. Our team packs files, IT infrastructure, servers, and office furniture systematically, labeling everything for easy setup. We work after-hours or during weekends to ensure your operations remain active.",
-    icon: `<svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm10 12h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V9h2v2zm0-4h-2V5h2v2zm4 12h-2v-2h2v2zm0-4h-2v-2h2v2z"/></svg>`,
-    image: "assets/services2.jpeg",
-    benefits: [
-      "Weekend & night shifting available",
-      "IT equipment & server packing expertise",
-      "Systematic labeling and layout planning",
-      "Dedicated corporate project coordinator"
-    ],
-    process: [
-      "Inventory mapping & labeling",
-      "Secure IT and workspace packing",
-      "Transport and fast unloading",
-      "Reassembly and quick department setup"
-    ]
-  },
-  {
-    id: "villa-shifting",
-    category: "moving",
-    title: "Villa Shifting",
-    subtitle: "Large scale residential moving solutions",
-    description: "Exclusive villa relocation services tailored for spacious residences, landscaping, and outdoor setups.",
-    fullDescription: "Villa moving involves complex logistics, valuable assets, and large furniture sets. We specialize in villa relocations, ensuring fine art, garden decor, play structures, and high-end home systems are safely packaged and moved by professionals.",
-    icon: `<svg viewBox="0 0 24 24"><path d="M17 11V3H7v4H3v14h18V11h-2zm-8 8H5v-2h4v2zm0-4H5v-2h4v2zm0-4H5V9h4v2zm6 8h-4v-6h4v6zm6 0h-4v-2h4v2zm0-4h-4v-2h4v2z"/></svg>`,
-    image: "assets/services3.jpeg",
-    benefits: [
-      "Handling of large and heavy assets",
-      "Chandelier & fine-art packaging",
-      "Garden furniture & outdoor equipment moving",
-      "Multiple trucks for same-day completion"
-    ],
-    process: [
-      "Pre-move detailed site survey",
-      "Specialty wrapping for high-value items",
-      "Managed multi-truck transport",
-      "Complete assembly and outdoor layout staging"
-    ]
-  },
-  {
-    id: "shop-shifting",
-    category: "moving",
-    title: "Shop Shifting",
-    subtitle: "Retail and commercial store relocations",
-    description: "Secure relocation of retail displays, inventories, fixtures, and delicate product stocks.",
-    fullDescription: "Our shop shifting service is structured for retail stores, supermarkets, and boutiques. We pack inventories securely to prevent damage and transport display counters, cash registers, racks, and signage carefully to your new commercial space.",
-    icon: `<svg viewBox="0 0 24 24"><path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"/></svg>`,
-    image: "assets/services4.jpeg",
-    benefits: [
-      "Inventory packing & safety checks",
-      "Safe transport of glass fixtures & displays",
-      "Quick relocation to avoid business losses",
-      "Heavy load support for equipment & machinery"
-    ],
-    process: [
-      "Stock inventory checklist creation",
-      "Dismantling shelves, counters & displays",
-      "Transit in weatherproof enclosed fleet",
-      "Unpacking, cleaning, and layout setup"
-    ]
-  },
+
   {
     id: "home-renovation",
     category: "renovation",
