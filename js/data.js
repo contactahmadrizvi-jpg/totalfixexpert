@@ -112,28 +112,6 @@ const SERVICES_DATA = [
     ]
   },
   {
-    id: "cleaning",
-    category: "cleaning",
-    title: "Cleaning Services",
-    subtitle: "Deep cleaning & post-renovation cleanup",
-    description: "Thorough residential and commercial cleaning including deep cleaning, move-in/move-out, and post-construction cleanup.",
-    fullDescription: "Keep your property spotless with our professional cleaning services. We provide deep cleaning for villas, apartments, and offices, including post-renovation debris removal, move-in/move-out cleaning, and regular maintenance cleans. Our trained staff uses eco-friendly products and industrial-grade equipment to deliver hygienic, fresh, and sparkling results.",
-    icon: `<svg viewBox="0 0 24 24"><path d="M15 3l-1 2H7v2h1l1 12h6l1-12h1V5h-7l1-2H8zm-2 14h-2v-3h2v3zm4.5-9.5l-1 8h-7l-1-8h9z"/></svg>`,
-    image: "assets/services14.png",
-    benefits: [
-      "Eco-friendly cleaning products",
-      "Post-renovation & construction cleanup",
-      "Move-in / move-out deep cleaning",
-      "Trained and insured cleaning staff"
-    ],
-    process: [
-      "Property walkthrough and scope assessment",
-      "Dusting, vacuuming, and surface wiping",
-      "Deep cleaning of kitchens, bathrooms & floors",
-      "Final inspection and fragrance finishing"
-    ]
-  },
-  {
     id: "electrical-work",
     category: "installation",
     title: "Electrical Work",
@@ -175,28 +153,6 @@ const SERVICES_DATA = [
       "Transparent quote with parts cost",
       "Repair or replacement with minimal disruption",
       "Pressure testing & final cleanup"
-    ]
-  },
-  {
-    id: "ac-maintenance",
-    category: "installation",
-    title: "AC Maintenance",
-    subtitle: "AC servicing, repair & installation",
-    description: "Professional AC deep cleaning, gas refilling, compressor repair, thermostat fixes, and new unit installation.",
-    fullDescription: "Keep your cooling system running efficiently in Oman's hot climate. Our AC technicians provide comprehensive services including deep cleaning, filter replacement, gas refilling (R410A/R32), compressor repair, thermostat calibration, and complete split/window AC installation. We service all major brands including LG, Samsung, Daikin, Carrier, and Gree.",
-    icon: `<svg viewBox="0 0 24 24"><path d="M22 11h-4.17l3.24-3.24-1.41-1.42L15 11h-2V9l4.66-4.66-1.42-1.41L13 6.17V2h-2v4.17L7.76 2.93 6.34 4.34 11 9v2H9L4.34 6.34 2.93 7.76 6.17 11H2v2h4.17l-3.24 3.24 1.41 1.42L9 13h2v2l-4.66 4.66 1.42 1.41L11 17.83V22h2v-4.17l3.24 3.24 1.42-1.41L13 15v-2h2l4.66 4.66 1.41-1.42L17.83 13H22z"/></svg>`,
-    image: "https://images.pexels.com/photos/33671149/pexels-photo-33671149.jpeg?auto=compress&cs=tinysrgb&w=800",
-    benefits: [
-      "All major AC brands serviced",
-      "Deep cleaning & sanitization",
-      "Gas refilling with leak check",
-      "Annual maintenance contracts available"
-    ],
-    process: [
-      "AC condition assessment & performance check",
-      "Filter cleaning or replacement",
-      "Coil cleaning, gas top-up & electrical check",
-      "Cooling test & maintenance report"
     ]
   },
   {
