@@ -46,135 +46,47 @@ const SERVICES_DATA = [
     ]
   },
   {
-    id: "furniture-repair",
+    id: "furniture-assembly-repair",
     category: "carpentry",
-    title: "Furniture Repair",
-    subtitle: "Professional wooden furniture restoration",
-    description: "Restore your dining tables, premium sofas, antique cupboards, and cabinets back to life.",
-    fullDescription: "Don't discard expensive furniture when it shows signs of damage. Our experienced carpenters specialize in repairing structural joints, fixing broken drawer sliders, polishing old wooden surfaces, and re-upholstering luxury sofas, ensuring they look new again.",
-    icon: `<svg viewBox="0 0 24 24"><path d="M19 13H5v-2h14v2z"/></svg>`,
-    image: "assets/services8.jpeg",
-    benefits: [
-      "High-grade premium wood polish",
-      "Structural reinforcement for squeaky/wobbly items",
-      "Door lock & hinge replacement",
-      "On-site repair option for standard jobs"
-    ],
-    process: [
-      "Condition assessment & wood identification",
-      "Structural reinforcing and gluing",
-      "Sanding, patching, and wood staining",
-      "Final lacquer sealing and polishing"
-    ]
-  },
-  {
-    id: "carpenter-work",
-    category: "carpentry",
-    title: "Carpenter Work",
-    subtitle: "Custom woodwork & carpentry services",
-    description: "Expert custom carpentry for shelves, partitioning, wooden frames, and general installations.",
-    fullDescription: "From building custom TV consoles to fitting interior wooden doors, our carpenter service in Muscat handles all woodworks. We source high-quality MDF, solid wood, and plywood, delivering high-precision craftsmanship for all household needs.",
-    icon: `<svg viewBox="0 0 24 24"><path d="M19.5 3.5L18 2l-1.5 1.5L15 2l-1.5 1.5L12 2l-1.5 1.5L9 2l-1.5 1.5L6 2v16h12V3.5h1.5zM12 11H8v-2h4v2zm0-4H8V5h4v2zm4 8H8v-2h8v2z"/></svg>`,
-    image: "assets/services9.jpeg",
-    benefits: [
-      "Precision cut & clean joint seals",
-      "Eco-friendly wood treatments",
-      "Custom sizes tailored to your home dimensions",
-      "Expert carpenters with decades of collective experience"
-    ],
-    process: [
-      "Accurate space measurements",
-      "Wood selection and design approval",
-      "On-site cutting and structural frame builds",
-      "Final finish fitting and smooth sanding"
-    ]
-  },
-  {
-    id: "cabinet-making",
-    category: "carpentry",
-    title: "Cabinet Making",
-    subtitle: "Custom cabinet and wardrobe builders",
-    description: "Bespoke kitchen cabinets, walk-in closets, and storage wardrobes designed for space optimization.",
-    fullDescription: "Maximize storage space elegantly. We build custom kitchen cabinets, modern pantries, bedroom wardrobes, and bathroom vanity sets. We use soft-close hydraulic hinges, premium laminated sheets, and handle hardware of your choice.",
-    icon: `<svg viewBox="0 0 24 24"><path d="M4 4h16v16H4V4zm2 2v6h5V6H6zm7 0v6h5V6h-5zm-7 8v4h5v-4H6zm7 0v4h5v-4h-5z"/></svg>`,
-    image: "assets/services10.jpeg",
-    benefits: [
-      "Heavy duty soft-close hinges & channels",
-      "High moisture-resistant (HMR) wood options",
-      "Custom internal configurations (shelves, racks)",
-      "Wide choice of finishes (High gloss, Matte, Acrylic)"
-    ],
-    process: [
-      "Storage space assessment and CAD design plan",
-      "Pre-cutting panels in specialized workshop",
-      "Installation of internal frames and drawer slides",
-      "Hanging doors, hardware fitting, and level calibration"
-    ]
-  },
-  {
-    id: "bed-installation",
-    category: "carpentry",
-    title: "Bed Installation & Repair",
-    subtitle: "Complete bed assembly and creak repair",
-    description: "Safe assembly of luxury beds, custom headboards, and structural squeak removal services.",
-    fullDescription: "A shaky or squeaky bed disrupts your sleep. We specialize in assembling imported flat-pack beds (IKEA, Home Centre, Danube) and reinforcing old bed frames. We replace broken slats, fix center beams, and secure hydraulic storage beds.",
-    icon: `<svg viewBox="0 0 24 24"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>`,
-    image: "assets/services11.jpeg",
-    benefits: [
-      "Eradicate bed squeaks & structural wobble",
-      "Hydraulic lift-up bed repair specialist",
-      "Custom headboard wall mounts",
-      "Correct assembly preventing long-term damage"
-    ],
-    process: [
-      "Component checks and layout matching",
-      "Secure side panels to headboard/footboard",
-      "Sturdy installation of support slats & middle rail",
-      "Load testing and mattress placement"
-    ]
-  },
-  {
-    id: "furniture-assembly",
-    category: "installation",
-    title: "Furniture Assembly",
-    subtitle: "Quick flat-pack furniture setup",
-    description: "Hassle-free assembly of wardrobes, dining tables, desks, drawers, and TV units.",
-    fullDescription: "Avoid the complex instructions of flat-pack furniture. Our specialists assemble products from IKEA, Home Box, Home Centre, and online international brands in a fraction of the time. We make sure alignments are clean, doors hang perfectly, and drawers slide smoothly.",
+    title: "Furniture Assembly & Repair",
+    subtitle: "Flat-pack assembly, furniture restoration & bed installation",
+    description: "Complete furniture solutions — assembly of new pieces, repair of damaged items, bed installation, and cabinet making.",
+    fullDescription: "Our furniture experts cover everything from assembling flat-pack pieces (IKEA, Home Box, Home Centre) to restoring damaged sofas, tables, and cupboards. We install and repair beds of all types, build custom kitchen cabinets and wardrobes with soft-close fittings, and fix structural joints, broken drawer sliders, and worn finishes. One team, all your furniture needs.",
     icon: `<svg viewBox="0 0 24 24"><path d="M4 18v3h3v-3h10v3h3v-3h1v-6H3v6h1zM3 5v6h18V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2z"/></svg>`,
     image: "assets/services12.jpeg",
     benefits: [
-      "Fast assembly using specialized hand tools",
-      "Wall anchoring for children safety (anti-tip)",
-      "Zero scratch guarantee on flooring during setup",
-      "Cardboard packaging cleanup and disposal"
+      "Flat-pack assembly from all major brands",
+      "Furniture repair, polishing & re-upholstering",
+      "Bed installation & squeak/wobble removal",
+      "Custom cabinets & wardrobes with soft-close hinges"
     ],
     process: [
-      "Unboxing and checking item checklists",
-      "Frame configuration and structure build",
-      "Drawer fitting, cabinet adjustments, and door leveling",
-      "Safety anchoring to walls and cleaning work area"
+      "Assessment of assembly or repair requirements",
+      "Careful unboxing / condition inspection",
+      "Precision assembly, reinforcing, or restoration",
+      "Final quality check, cleanup & floor protection"
     ]
   },
   {
-    id: "handyman-services",
-    category: "installation",
-    title: "General Handyman",
-    subtitle: "Professional home repair & mounting services",
-    description: "TV mounting, curtain hanging, shelf installation, lock replacement, and quick electrical/plumbing repairs.",
-    fullDescription: "From hanging heavy mirrors to fixing running toilets, our general handyman services cover all odd jobs around the house. We bring our own high-end hammer drills, wall plugs, screwdrivers, and replacement accessories to fix everything safely.",
+    id: "carpentry-handyman",
+    category: "carpentry",
+    title: "Carpentry & Handyman Services",
+    subtitle: "Custom woodwork, mounting & all-round home repairs",
+    description: "Expert carpentry for custom shelves, wooden frames & partitions — plus TV mounting, curtain hanging, lock replacement and quick home repairs.",
+    fullDescription: "From crafting bespoke TV consoles and wooden partitions to mounting heavy mirrors and fixing running taps, our skilled team handles all carpentry and handyman tasks. We use high-quality MDF, solid wood, and plywood for custom builds, and bring our own professional tools for every mounting, drilling, and repair job — completing most tasks in a single visit.",
     icon: `<svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5.1-2.4-7.5-1.3L8 5.3 5.3 8 1.7 4.4C.6 6.8 1 9.9 3 11.9c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.4-.4.4-1.1 0-1.4z"/></svg>`,
-    image: "assets/services10.jpeg",
+    image: "assets/services9.jpeg",
     benefits: [
-      "Sturdy concrete wall mounting",
-      "Electrical bulb, switch & socket repair",
-      "Plumbing tap, drain & washer replacement",
-      "Speedy response for home maintenance jobs"
+      "Custom woodwork — shelves, doors & partitions",
+      "TV, mirror & curtain rail mounting",
+      "Lock, hinge & door repair",
+      "Quick same-day response for odd jobs"
     ],
     process: [
-      "Job assessment and safety check",
-      "Drilling, wiring, or pipe fixing with accuracy",
-      "Functional testing of the repair/mount",
-      "Cleaning of concrete dust or work residue"
+      "Job assessment & accurate measurements",
+      "Wood selection / tool preparation",
+      "On-site cutting, building, mounting or repair",
+      "Testing, cleanup & final walkthrough"
     ]
   },
   {
@@ -285,28 +197,6 @@ const SERVICES_DATA = [
       "Filter cleaning or replacement",
       "Coil cleaning, gas top-up & electrical check",
       "Cooling test & maintenance report"
-    ]
-  },
-  {
-    id: "furniture-installation",
-    category: "installation",
-    title: "Furniture Installation",
-    subtitle: "Professional furniture setup & mounting",
-    description: "Expert assembly and wall-mounting of beds, wardrobes, TV units, kitchen racks, shelves, and office furniture.",
-    fullDescription: "We provide professional furniture installation services for homes and offices in Muscat. Whether you need a new bed assembled, wall-mounted TV unit, kitchen shelves installed, or office workstations set up, our team handles it with precision. We bring all necessary tools, hardware, and wall anchors to ensure secure, level, and damage-free installation.",
-    icon: `<svg viewBox="0 0 24 24"><path d="M4 18v3h3v-3h10v3h3v-3h1v-6H3v6h1zM3 5v6h18V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2z"/></svg>`,
-    image: "https://images.pexels.com/photos/5691502/pexels-photo-5691502.jpeg?auto=compress&cs=tinysrgb&w=800",
-    benefits: [
-      "Beds, wardrobes, desks & TV units",
-      "Wall mounting with heavy-duty anchors",
-      "Anti-tip safety anchoring included",
-      "Zero scratch floor protection"
-    ],
-    process: [
-      "Unboxing and parts inventory check",
-      "Frame assembly per manufacturer specs",
-      "Wall mounting & level calibration",
-      "Final stability test & cleanup"
     ]
   },
   {
