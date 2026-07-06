@@ -1668,6 +1668,16 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
+
+  /* House Shifting and Home & Shop Renovation take full width on mobile */
+  .services-grid .service-card[data-id="house-shifting"],
+  .services-grid .service-card[data-id="home-renovation"] {
+    grid-column: 1 / -1;
+  }
+  .services-grid .service-card[data-id="house-shifting"] .service-image-container,
+  .services-grid .service-card[data-id="home-renovation"] .service-image-container {
+    height: 200px;
+  }
   .service-image-container {
     height: 140px;
   }

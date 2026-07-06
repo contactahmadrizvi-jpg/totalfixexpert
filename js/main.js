@@ -373,7 +373,7 @@ function initDynamicComponents() {
     const renderServices = (filter = "all") => {
       const filtered = filter === "all" ? SERVICES_DATA : SERVICES_DATA.filter(s => s.category === filter);
       servicesContainer.innerHTML = filtered.map(s => `
-        <div class="service-card" data-category="${s.category}">
+        <div class="service-card" data-category="${s.category}" data-id="${s.id}">
           <div class="service-image-container">
             <img src="${s.image}" alt="${s.title}" loading="lazy">
             <div class="service-icon-floating">

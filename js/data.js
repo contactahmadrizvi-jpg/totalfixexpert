@@ -26,14 +26,14 @@ const SERVICES_DATA = [
   {
     id: "home-renovation",
     category: "renovation",
-    title: "Home Renovation",
-    subtitle: "Complete home transformation & upgrades",
-    description: "Premium remodeling for your kitchen, bathrooms, and living areas with Omani design elements.",
-    fullDescription: "Transform your living space with our premium home renovation services. We offer comprehensive remodeling, including flooring upgrades, drywall installations, modern false ceilings, wall painting, kitchen cabinetry redesign, and bathroom transformations. We integrate premium materials and contemporary designs that match the luxury style expected in Oman.",
+    title: "Home and Shop Renovation",
+    subtitle: "Complete home & commercial space transformation",
+    description: "Premium remodeling for your home, kitchen, bathrooms, living areas, and retail shops with Omani design elements.",
+    fullDescription: "Transform your home or commercial space with our premium renovation services. We offer comprehensive remodeling for residences and retail shops alike — including flooring upgrades, drywall installations, modern false ceilings, wall painting, kitchen cabinetry redesign, bathroom transformations, showcase glass, product shelves, and modern checkout counters. We integrate premium materials and contemporary designs that match the luxury style expected in Oman.",
     icon: `<svg viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>`,
     image: "assets/services5.jpeg",
     benefits: [
-      "Custom 3D layout planning",
+      "Custom 3D layout planning for homes & shops",
       "Premium materials & sanitaryware selection",
       "Plumbing, electrical, and finishing work included",
       "On-schedule project delivery warranty"
@@ -43,50 +43,6 @@ const SERVICES_DATA = [
       "Demolition and surface preparation",
       "Civil, electrical, & plumbing installations",
       "Finishing paint, fixtures, and final inspection"
-    ]
-  },
-  {
-    id: "room-renovation",
-    category: "renovation",
-    title: "Room Renovation",
-    subtitle: "Individual room remodeling & styling",
-    description: "Refresh your bedroom, kids' room, guest room, or lounge with custom partitions, lighting, and finishes.",
-    fullDescription: "Give any single room a complete facelift. Whether it's upgrading a master bedroom with modern accent walls and indirect lighting or building a cozy, functional family lounge, our experts deliver high-end woodwork, gypsum board design, painting, and smart lighting setup.",
-    icon: `<svg viewBox="0 0 24 24"><path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-9 14H5v-5h5v5zm9 0h-7v-5h7v5zm0-7H5V6h14v5z"/></svg>`,
-    image: "assets/services6.jpeg",
-    benefits: [
-      "Custom drywall & ceiling work",
-      "Vibrant paint, wallpaper, and panel designs",
-      "Electrical sockets & ambient lighting layout",
-      "Space-saving built-in closets & desks"
-    ],
-    process: [
-      "Consultation on room layout requirements",
-      "Plastering, wiring, and ceiling frame setup",
-      "Painting, panelling & light fixtures installation",
-      "Final cleanup and furniture assembly"
-    ]
-  },
-  {
-    id: "shop-renovation",
-    category: "renovation",
-    title: "Shop Renovation",
-    subtitle: "Modern commercial interior solutions",
-    description: "Commercial shop fitting, branding-friendly design upgrades, lighting layouts, and partition works.",
-    fullDescription: "Make your retail store stand out to Omani shoppers. We renovate commercial units with beautiful showcase glass, sturdy product shelves, modern checkout counters, high-end tiling, and specialized lighting systems designed to highlight your products.",
-    icon: `<svg viewBox="0 0 24 24"><path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"/></svg>`,
-    image: "assets/services7.jpeg",
-    benefits: [
-      "Branding integration options",
-      "Compliant with commercial regulations in Oman",
-      "Durable high-traffic materials",
-      "Speedy delivery to prevent trading delays"
-    ],
-    process: [
-      "Detailed architectural layouts & approvals",
-      "Demolition, structural updates & plumbing/HVAC",
-      "Shop front framing, shelves, and counter construction",
-      "Branded detailing, paint finishes, and lighting testing"
     ]
   },
   {
